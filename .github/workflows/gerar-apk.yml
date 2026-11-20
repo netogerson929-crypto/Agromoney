@@ -21,7 +21,7 @@ jobs:
         env:
           PYTHONUTF8: "1"
           PYTHONIOENCODING: utf-8
-        run: flet build apk --project "Agro Money" --org br.agromoney --product "Agro Money"
+        run: yes | flet build apk --project "Agro Money" --org br.agromoney --product "Agro Money"
       - uses: actions/upload-artifact@v4
         with:
           name: agro-money-apk
